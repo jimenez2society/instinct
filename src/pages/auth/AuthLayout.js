@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 import AuthHeader from "./AuthHeader";
@@ -11,10 +11,7 @@ function AuthLayout() {
   return (
     <div className={`AuthLayout ${dark && "dark"} ${light && "light"}`}>
       <AuthHeader />
-      <Routes>
-        <Route index element={<Login />} />
-        <Route path="register" element={<Register />} />
-      </Routes>
+      <Outlet />
     </div>
   );
 }

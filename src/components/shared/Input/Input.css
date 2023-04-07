@@ -1,0 +1,49 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  margin-bottom: 50px;
+}
+
+.form-group input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: inherit;
+  padding: 5px;
+  border-radius: 0;
+}
+.form-group label {
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.form-group .input-light {
+  border-bottom: 1px solid var(--primary-text-light);
+  color: var(--primary-text-light);
+}
+
+.form-group .input-dark {
+  border-bottom: 1px solid var(--primary-text-dark);
+}
+@media screen and (max-width: 660px) {
+  .AuthForm--heading .logo svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-group {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .form-group input {
+    font-size: 14px;
+  }
+  .form-group label {
+    margin-bottom: 10px;
+  }
+  .form-group label {
+    font-size: 12px;
+  }
+}

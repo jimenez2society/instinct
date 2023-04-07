@@ -1,0 +1,116 @@
+.AuthForm {
+  padding: 25px;
+  padding-bottom: 100px;
+  max-width: 621px;
+  transition: 0.3s;
+}
+.AuthForm--heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.AuthForm--heading .logo svg {
+  width: 45px;
+  height: 42px;
+  display: inline;
+}
+
+.AuthForm--footer {
+  display: flex;
+  flex-direction: column;
+}
+.AuthForm--footer div {
+  display: flex;
+  width: max-content;
+  margin-bottom: 60px !important;
+}
+.AuthForm--footer div p {
+  margin-right: 10px;
+}
+.AuthForm--footer div a {
+  color: var(--link);
+}
+.AuthForm--footer button,
+.title {
+  font-weight: 400;
+}
+.AuthForm--footer button {
+  width: 194px;
+  padding: 20px 0px;
+  background: none;
+  border: none;
+  background-color: var(--link);
+  color: #fff;
+}
+.lightMode-text {
+  color: var(--primary-text-light);
+}
+.darkMode-text {
+  color: var(--primary-text-dark);
+}
+.lightMode-bg {
+  background-color: #fff;
+}
+.darkMode-bg {
+  background-color: var(--secondary-dark);
+}
+.AuthForm,
+.AuthForm--footer button {
+  border-radius: 10px;
+}
+
+.AuthForm,
+.title,
+.AuthForm--footer div,
+.AuthForm--footer button {
+  margin: 0 auto;
+}
+.AuthForm--footer div a,
+.AuthForm--footer button,
+.AuthForm--footer div p,
+.title {
+  font-size: 18px;
+}
+
+.input-light:-webkit-autofill {
+  -webkit-text-fill-color: var(--primary-text-light);
+}
+.input-dark:-webkit-autofill {
+  -webkit-text-fill-color: var(--primary-text-dark);
+}
+@media screen and (max-width: 660px) {
+  .AuthForm--heading .logo svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .AuthForm {
+    padding-bottom: 20px;
+  }
+  .AuthForm--heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .AuthForm--footer div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px !important;
+  }
+  .AuthForm--footer button {
+    width: 140px;
+    padding: 15px 0px;
+    font-size: 12px;
+  }
+  .AuthForm--footer div a {
+    margin-right: 10px;
+  }
+  .AuthForm--footer div p {
+    margin-bottom: 10px;
+  }
+  .AuthForm--footer div p,
+  .AuthForm--footer div a {
+    font-size: 12px;
+  }
+}
