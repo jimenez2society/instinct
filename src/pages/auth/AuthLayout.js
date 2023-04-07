@@ -1,0 +1,22 @@
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Login from "./Login/Login";
+import Register from "./Register/Register";
+import AuthHeader from "./AuthHeader";
+import "./AuthLayout.css";
+import { useSelector } from "react-redux";
+import { getThemes } from "../../features/themeSlice";
+function AuthLayout() {
+  const { dark, light } = useSelector(getThemes);
+  return (
+    <div className={`AuthLayout ${dark && "dark"} ${light && "light"}`}>
+      <AuthHeader />
+      <Routes>
+        <Route index element={<Login />} />
+        <Route path="register" element={<Register />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default AuthLayout;

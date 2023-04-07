@@ -1,0 +1,45 @@
+:root {
+  --link: #eb8138;
+  /* light */
+  --primary-light: #eb8138;
+  --primary-text-light: #031e2d;
+  --secondary-text-light: #465f6d;
+  --text-faded-light: #465f6d;
+
+  /* dark */
+  --primary-dark: #031e2d;
+  --secondary-dark: #0d354b;
+  --primary-text-dark: #c9eafc;
+  /* --secondary-text-light: #465f6d; */
+  --text-faded-dark: #98a8b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Comfortaa", sans-serif;
+  position: relative;
+  background-color: white;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  color: red;
+}
+svg.darkMode,
+svg.lightMode {
+  width: 24px;
+  height: 24px;
+}
+svg.darkMode {
+  stroke: var(--primary-text-light);
+}
+svg.lightMode {
+  fill: var(--primary-light);
+}

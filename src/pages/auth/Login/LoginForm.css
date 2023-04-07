@@ -1,0 +1,152 @@
+.LoginForm {
+  border-radius: 10px;
+  padding: 25px;
+  padding-bottom: 100px;
+  max-width: 621px;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+.LoginForm--heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.LoginForm--heading .logo svg {
+  width: 45px;
+  height: 42px;
+  display: inline;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  margin-bottom: 50px;
+}
+.form-group input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: inherit;
+  padding: 5px;
+  border-radius: 0;
+}
+
+.form-group label {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.form-group .input-light {
+  border-bottom: 1px solid var(--primary-text-light);
+  color: var(--primary-text-light);
+}
+.input-light:-webkit-autofill {
+  -webkit-text-fill-color: var(--primary-text-light);
+}
+.form-group .input-dark {
+  border-bottom: 1px solid var(--primary-text-dark);
+}
+.input-dark:-webkit-autofill {
+  -webkit-text-fill-color: var(--primary-text-dark);
+}
+.title {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+}
+.LoginForm--footer {
+  display: flex;
+  flex-direction: column;
+}
+.LoginForm--footer div {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.LoginForm--footer div p {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.LoginForm--footer div a {
+  font-size: 18px;
+  color: var(--link);
+}
+.LoginForm--footer button {
+  width: 194px;
+  padding: 20px 0px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  background-color: var(--link);
+  color: #fff;
+  margin: 0 auto;
+}
+.lightMode-text {
+  color: var(--primary-text-light);
+}
+.darkMode-text {
+  color: var(--primary-text-dark);
+}
+.lightMode-bg {
+  background-color: #fff;
+}
+.darkMode-bg {
+  background-color: var(--secondary-dark);
+}
+
+@media screen and (max-width: 660px) {
+  .LoginForm--heading .logo svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .LoginForm {
+    padding-bottom: 50px;
+  }
+  .LoginForm--footer div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .LoginForm--footer div p {
+    margin-bottom: 10px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  .form-group input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    padding: 5px;
+  }
+  .form-group label {
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  .LoginForm--footer button {
+    width: 140px;
+    padding: 15px 0px;
+    font-size: 12px;
+  }
+  .LoginForm--footer div p {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .LoginForm--footer div a {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}

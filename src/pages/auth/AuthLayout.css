@@ -1,0 +1,12 @@
+.AuthLayout {
+  min-height: 100vh;
+  padding: 0px 30px;
+  padding-bottom: 30px;
+  transition: 0.3s;
+}
+.AuthLayout.dark {
+  background-color: var(--primary-dark);
+}
+.AuthLayout.light {
+  background-color: var(--primary-light);
+}
